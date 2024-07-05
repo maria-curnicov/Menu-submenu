@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Convergence&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #333;
+}
+
+.menu {
+  display: inline-block;
+  align-items: center;
+}
+
+.menu-item {
+  display: inline-block;
+  position: relative;
+}
+
+.menu-item a {
+  display: inline-block;
+  padding: 15px 20px;
+  color: white;
+  vertical-align: middle;
+}
+
+.menu-item a .icon {
+  margin-right: 8px;
+}
+
+.menu-item a:hover,
+.menu-item a:focus {
+  background-color: #555;
+  text-decoration: underline;
+}
+
+.active {
+  background-color: #605e5e;
+  font-weight: bold;
+}
+
+.menu-item:not(:last-child) {
+  border-right: 1px solid white;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+}
+
+.submenu-item a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.submenu-item a::before {
+  content: ">";
+  padding-right: 3px;
+}
+
+.submenu-item a:hover,
+.submenu-item a:focus {
+  background-color: #666;
+  text-decoration: underline;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+main {
+  background-image: url("img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 100px 0 30px 0;
+}
+
+q {
+  font-family: "Convergence";
+  font-size: 25px;
+}
